@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- use link tag to link js file -->
+    <link rel="structure" href="./ASSIGN_3.JS" />
+  </head>
+
+  <body>
+    <!-- <h1 id = "heading"> Rules for naming JS variables </h1> -->
+
+    <script>
+      //  *****************************CHAPTER NO 1 "ALERT"********************************************
+      // //Write a script to greet your website visitor using JS alert box.
+      //     alert("welcome");
+
+      // //Write a script to display following message on your web
+      //      alert("Error! Please enter a valid password")
+
+      // //Write a script to display following message on your web page: (Hint : Use line break)
+      //      var text ="Welcome to Js Land\n Happy Coding";
+      //          alert(text);
+
+      // //Generate the following message through browser’s developer console:
+      //      alert("Hello...I can run JS through my web browser's console");
+
+      //*********************************CHAPTER NO 2 Variables for strings*******************************
+      // //Declare a variable called username.
+      //      var  username;
+
+      // //Declare a variable called myName & assign to it a string that represents your Full Name.
+      //     var myName;
+      //     var myName = "sk";
+      //     var sk = "syeda khinsa";
+
+      // //Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+      //     var name= "maryam";
+      //     alert(name);
+
+      //     var age= "15";
+      //     alert(age +"years old");
+
+      //     var course="Certified Mobile Application Development";
+      //     alert(course);
+
+      // //Declare a variable called email and assign to it a string that represents your Email Address(e.g. example@example.com).Show the blow mentioned message in an alert box.
+      //     var email =" Khinsamukhtar@gmail.com";
+      //     alert("My email address is " +email);
+
+      // //Declare a variable called book & give it the value “A smarter way to learn JavaScript”. Display the following message in an alert box:
+      //     var book = "A Smarter way to learn JavaScript";
+      //     alert("I am trying to learn from the book " +book);
+
+      // //Write a script to display this in browser through JS
+      //     document.write("yAH...! I can write HTML content through JavaScipt")
+
+      // //Store following string in a variable and show in alert and browser through JS
+      //     alert("“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”");
+
+      // *********************************************CHAPTER NO 3 Variables for numbers*********************************************
+      // //⁡Declare a variable called age & assign to it your age. Show your age in an alert box.
+      //      var age= 20;
+      //     alert("I am "+ age +"years old");
+
+      // //Declare a variable called birthYear & assign to it your birth year. Show the following message in your browser:
+      //     var birth_year = 2002;
+      //     document.write("My birth year is " + birth_year);
+
+      // //Show the following message in your browser: “John Doe ordered 5 T-shirt(s) on XYZ Clothing store”.
+      //     var Visitor_name = "Ahmed";
+      //     var Product_title = "XYZ Clothing store";
+      //     var Quantity ="5 T-shirt's ";
+
+      //     document.write(Visitor_name + " ordered " + Quantity + " on " + Product_title);
+
+      // *********************************************CHAPTER NO 4 Variable Names: legal and illegal*********************************************
+      // //Declare 3 variables in one statement.
+      //     var name = "ahmed", age= "20" , Last_Name = "khan";
+
+      //Declare 5 legal and 5 illegal variable names.
+      //leagl variable names
+      // var myName;
+      // var numberOne;
+      // var upperCase;
+      // var _MyName;
+      // var My_name;
+      // var $startWithDollar;
+
+      // //illegal variables names
+      // var 24Name; //----->invalid because its start with number
+      // var function ; //------> invalid because function is keyword
+      // var true;   //--------> reserved keyword
+      // var My Name:  //-------> invalid because it contain space
+      // var my-name; // ------->invalid beacuse it contains a hypen
+
+      //   //Display this in your browser
+
+      //     var a =document.getElementById("heading");
+      //        a.style.color = "purple"
+
+      //    var b = "Variables names can only contain , number, $ and _. for example:$my_1stVariable";
+      //    var c = "Variables must begin with a letter, $ or _ . For example : $name,_name or name";
+      //    var d = "Variables names are case sensitivee"
+      //    var e = "Variables names should not be JS keyword";
+
+      //    document.write(b +"<br>" + c + "<br>"+ d + "<br>" + e);
+
+      // *********************************************CHAPTER NO 5 Math Expressions*********************************************
+      //Write a program that take two numbers & add them in a new variable. Show the result in your browser.
+      //    var number1 = prompt("Enter the first number");
+      //    var number2 = prompt("Enter the second number");
+
+      //    number1 = parseFloat(number1);
+      //    number2 = parseFloat(number2);
+
+      //    var sum= number1 + number2;
+
+      //    document.write(" sum of "+ number1 + " and " + number2 + " is " + sum);
+
+      //  //2. Repeat task1 for subtraction, multiplication, division & modulus.
+      //         //SUBTRACTION
+      //    var number1 = prompt("Enter the first number");
+      //    var number2 = prompt("Enter the second number");
+
+      //    number1 = parseFloat(number1);
+      //    number2 = parseFloat(number2);
+
+      //    var sub= number1 - number2;
+
+      //    document.write(" subtraction of "+ number1 + " and " + number2 + " is " + sub);
+
+      //           //MULTIPLICATION
+      //    var number1 = prompt("Enter the first number");
+      //    var number2 = prompt("Enter the second number");
+
+      //    number1 = parseFloat(number1);
+      //    number2 = parseFloat(number2);
+
+      //    var Muliply= number1 * number2;
+
+      //    document.write(" multiplication of "+ number1 + " and " + number2 + " is " + Muliply);
+
+      //division
+      var number1 = prompt("Enter the first number");
+      var number2 = prompt("Enter the second number");
+
+      number1 = parseFloat(number1);
+      number2 = parseFloat(number2);
+
+      var divide = number1 / number2;
+
+      document.write(
+        " division of " + number1 + " and " + number2 + " is " + divide
+      );
+
+      //modulus
+      var number1 = prompt("Enter the first number");
+      var number2 = prompt("Enter the second number");
+
+      number1 = parseFloat(number1);
+      number2 = parseFloat(number2);
+
+      var modulus = number1 % number2;
+
+      document.write(
+        " modulus " + number1 + " and " + number2 + " is " + modulus
+      );
+
+      //Do the following using JS Mathematic Expressions
+
+      // a. Declare a variable
+      var myVariable;
+
+      // b. Show the value of the variable after declaration
+      document.write(
+        "Value after variable declaration is: " + myVariable + "<br>"
+      );
+
+      // c. Initialize the variable with some number
+      myVariable = 5;
+
+      // d. Show the initial value of the variable
+      document.write("Initial value: " + myVariable + "<br>");
+
+      // e. Increment the variable
+      myVariable++;
+
+      // f. Show the value of the variable after increment
+      document.write("Value after increment is: " + myVariable + "<br>");
+
+      // g. Add 7 to the variable
+      myVariable += 7;
+
+      // h. Show the value of the variable after addition
+      document.write("Value after addition is: " + myVariable + "<br>");
+
+      // i. Decrement the variable
+      myVariable--;
+
+      // j. Show the value of the variable after decrement
+      document.write("Value after decrement is: " + myVariable + "<br>");
+
+      // k. Show the remainder after dividing the variable's value by 3
+      var remainder = myVariable % 3;
+
+      // l. Show the remainder
+      document.write("The remainder is: " + remainder + "<br>");
+
+      //another question movie tickets
+
+      // Store the ticket price in a variable
+      var ticketPrice = 600;
+
+      // Calculate the cost of buying 5 tickets
+      var totalCost = ticketPrice * 5;
+
+      // Display the result
+      document.write(
+        "The cost of buying 5 movie tickets is: " + totalCost + " PKR"
+      );
+
+      // Write a script to display multiplication table of any number in your browser.
+
+      // Take input from the user
+      var number = parseInt(
+        prompt("Enter a number to display its multiplication table:")
+      );
+
+      // Display the multiplication table
+      document.write("<h3>Multiplication Table of " + number + "</h3>");
+
+      for (var i = 1; i <= 10; i++) {
+        var result = number * i;
+        document.write(number + " x " + i + " = " + result + "<br>");
+      }
+
+      //The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.
+      // a. Store a Celsius temperature into a variable
+      var celsiusTemperature = 30;
+
+      // b. Convert Celsius to Fahrenheit
+      var fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+
+      // Output the result
+      document.write(
+        celsiusTemperature + "°C is " + fahrenheitTemperature + "°F<br>"
+      );
+
+      // c. Store a Fahrenheit temperature into a variable
+      var fahrenheitTemperature2 = 86;
+
+      // d. Convert Fahrenheit to Celsius
+      var celsiusTemperature2 = ((fahrenheitTemperature2 - 32) * 5) / 9;
+
+      // Output the result
+      document.write(
+        fahrenheitTemperature2 + "°F is " + celsiusTemperature2 + "°C"
+      );
+
+      //Write a program to implement checkout process of as hopping cart system for an e-commerce website. Store the following in variables
+      // Store the price of item 1
+      var item1Price = 100;
+
+      // Store the price of item 2
+      var item2Price = 200;
+
+      // Store the ordered quantity of item 1
+      var item1Quantity = 3;
+
+      // Store the ordered quantity of item 2
+      var item2Quantity = 2;
+
+      // Store the shipping charges
+      var shippingCharges = 50;
+
+      // Calculate the total cost of item 1
+      var item1Total = item1Price * item1Quantity;
+
+      // Calculate the total cost of item 2
+      var item2Total = item2Price * item2Quantity;
+
+      // Calculate the subtotal
+      var subtotal = item1Total + item2Total;
+
+      // Calculate the total cost including shipping charges
+      var totalCost = subtotal + shippingCharges;
+
+      // Display the result
+      document.write("<h3>Checkout Process</h3>");
+      document.write("Price of Item 1: " + item1Price + " PKR<br>");
+      document.write("Price of Item 2: " + item2Price + " PKR<br>");
+      document.write("Ordered Quantity of Item 1: " + item1Quantity + "<br>");
+      document.write("Ordered Quantity of Item 2: " + item2Quantity + "<br>");
+      document.write("Shipping Charges: " + shippingCharges + " PKR<br><br>");
+      document.write("Total Cost of Item 1: " + item1Total + " PKR<br>");
+      document.write("Total Cost of Item 2: " + item2Total + " PKR<br>");
+      document.write("Subtotal: " + subtotal + " PKR<br>");
+      document.write(
+        "Total Cost (including shipping charges): " + totalCost + " PKR"
+      );
+
+      //Store total marks & marks obtained by a student in 2 variables. Compute the percentage & show the result in your browser
+      // Store the total marks
+      var totalMarks = 800;
+
+      // Store the marks obtained by the student
+      var marksObtained = 780;
+
+      // Calculate the percentage
+      var percentage = (marksObtained / totalMarks) * 100;
+
+      // Display the result
+      document.write("<h3>Percentage Calculation</h3>");
+      document.write("Total Marks: " + totalMarks + "<br>");
+      document.write("Marks Obtained: " + marksObtained + "<br>");
+      document.write("Percentage: " + percentage.toFixed(2) + "%");
+
+      //Assume we have 10 US dollars & 25 Saudi Riyals. Write a script to convert the total currency to Pakistani Rupees. Perform all calculations in a single expression.(Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee and 1 Saudi Riyal = 28 Pakistani Rupee)
+      // Exchange rates
+      var usdToPkrRate = 104.8;
+      var sarToPkrRate = 28;
+
+      // Amount in US dollars
+      var usdAmount = 10;
+
+      // Amount in Saudi Riyals
+      var sarAmount = 25;
+
+      // Conversion to Pakistani Rupees in a single expression
+      var pkrAmount = usdAmount * usdToPkrRate + sarAmount * sarToPkrRate;
+
+      // Display the result
+      document.write("<h3>Currency Conversion</h3>");
+      document.write("Amount in US Dollars: " + usdAmount + "<br>");
+      document.write("Amount in Saudi Riyals: " + sarAmount + "<br>");
+      document.write(
+        "Total Amount in Pakistani Rupees: " + pkrAmount.toFixed(2) + " PKR"
+      );
+
+      //     Write a program to initialize a variable with some number and do arithmetic in following sequence:
+      // a. Add 5
+      // b. Multiply by 10
+      // c. Divide the result by 2
+      // Perform all calculations in a single expression
+
+      // Initialize the variable with a number
+      var number = 10;
+
+      // Perform arithmetic operations in a single expression
+      var result = ((number + 5) * 10) / 2;
+
+      // Display the result
+      document.write("<h3>Arithmetic Operations</h3>");
+      document.write("Initial Number: " + number + "<br>");
+      document.write("Result: " + result);
+
+        //       The Age Calculator: Forgot how old someone is?
+        // Calculate it!
+        // a. Store the current year in a variable.
+        // b. Store their birth year in a variable.
+        // c. Calculate their 2 possible ages based on the stored
+        // values.
+      // Store the current year in a variable
+            var currentYear = new Date().getFullYear();
+
+        // Store their birth year in a variable
+        var birthYear = 1990; // Replace with the actual birth year
+
+        // Calculate their 2 possible ages based on the stored values
+        var age1 = currentYear - birthYear;
+        var age2 = age1 - 1;
+
+        // Display the result
+        document.write("<h3>Age Calculator</h3>");
+        document.write("Current Year: " + currentYear + "<br>");
+        document.write("Birth Year: " + birthYear + "<br>");
+        document.write("Possible Age 1: " + age1 + "<br>");
+        document.write("Possible Age 2: " + age2);
+
+        // b. Calculate the circumference based on the radius, and
+        // output “The circumference is NN”.
+        // (Hint : Circumference of a circle = 2 π r , π = 3.142)
+        // Calculate the area based on the radius, and output “The
+        // area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+
+                // Store the radius into a variable
+            var radius = 5; // Replace with the actual radius
+
+        // Calculate the circumference
+        var circumference = 2 * Math.PI * radius;
+
+        // Calculate the area
+        var area = Math.PI * radius * radius;
+
+        // Display the results
+        document.write("<h3>Geometrizer</h3>");
+        document.write("Radius: " + radius + "<br>");
+        document.write("Circumference: " + circumference.toFixed(2) + "<br>");
+        document.write("Area: " + area.toFixed(2));
+
+        // The Lifetime Supply Calculator: Ever wonder how
+        // much a “lifetime supply” of your favorite snack is?
+        // Wonder no more.
+        // a. Store your favorite snack into a variable
+        // b. Store your current age into a variable.
+        // c. Store a maximum age into a variable.
+        // d. Store an estimated amount per day (as a number).
+        // e. Calculate how many would you eat total for the rest of
+        // your life.
+        // Output the result to the screen like so: “You will need
+        // NNNN to last you until the ripe old age of NN”.
+
+            // Store your favorite snack into a variable
+        var favoriteSnack = "Chocolate"; // Replace with your favorite snack
+
+        // Store your current age into a variable
+        var currentAge = 25; // Replace with your current age
+
+        // Store a maximum age into a variable
+        var maximumAge = 80; // Replace with your estimated maximum age
+
+        // Store an estimated amount per day (as a number)
+        var amountPerDay = 2; // Replace with your estimated amount per day
+
+        // Calculate how many you would eat total for the rest of your life
+        var yearsRemaining = maximumAge - currentAge;
+        var snacksPerYear = amountPerDay * 365;
+        var totalSnacks = yearsRemaining * snacksPerYear;
+
+        // Display the result
+        document.write("<h3>Lifetime Supply Calculator</h3>");
+        document.write("Favorite Snack: " + favoriteSnack + "<br>");
+        document.write("Current Age: " + currentAge + "<br>");
+        document.write("Maximum Age: " + maximumAge + "<br>");
+        document.write("Estimated Amount Per Day: " + amountPerDay + "<br>");
+        document.write("You will need " + totalSnacks + " " + favoriteSnack + " to last you until the ripe old age of " + maximumAge);
+
+
+        // ****************************************************************chapter6-9********************************************
+            //question1
+            // var num=9 ;
+            // document.write("the value is :;" +num);
+            // var num=++num;
+            // document.write("<br>the value of ++num is :" +num);
+            // var num = num++;
+            // document.write(" <br>value of ++num is:" +num)
+            // var num = --num;
+            // document.write(" <br>value of --num is:" +num);
+            // var num =num--;
+            // document.write(" <br>value of num-- is:" +num)
+
+            //question2
+            // var a = 23;
+            // var b =11;
+            // document.write( +--a  +"<br>");
+            // document.write( +--a- --b +"<br>")
+            // document.write( --a - --b + ++b +"<br>");
+            // document.write( --a - --b + ++b +b +"<br>")
+            // var result = --a - --b + ++b +b--;
+            //  document.write(result);
+            // document.write("<br>a is" +a)
+            // document.write("<br>b is" +b)
+            // document.write("<br>result is" +result)
+
+            //question3
+            // var enter = prompt("enter number");
+            // var msg ="greetings"
+            // alert(msg);
+
+            //question5 
+            // var num = parseInt( prompt("enter number"))
+            // if(isNaN (num)) {
+            //     number =5;
+            // }
+            // var table = "";
+            // for ( var  i = 1; i<=10; i++){
+            //     table += num  + "x" +i+ "=" +(num*i) +"<br>"
+            // } 
+            // document.write(table);
+
+            //question6
+            // var name1 = prompt("enter subject name one ")
+            // var name2 = prompt("enter subject name two ")
+            // var name3 = prompt("enter subject name three ")
+            // var total  = 100;
+            // var grand_total = 300;
+            // var obtained_marks1 = parseInt( prompt("1st subject marks" ));
+            // var obtained_marks2 =parseInt(prompt("2nd subject marks" ))
+            // var obtained_marks3 =parseInt(prompt("3rd subject marks" ))
+            // var all_obtained = obtained_marks1+ obtained_marks2+obtained_marks3;
+            // var percentage = ((all_obtained/grand_total)*100);
+            // document.write("subject one  is " +name1);
+            // document.write("<br>subject two is " +name2);
+            // document.write("<br>subject three is " +name3);
+            // document.write( "<br> overall percentage is "+percentage);
+
+        //**************************************************CHAPTER 9 TO 11 USER INPUT AND CONDITIONAL STATEMENT****************************************
+        // Write a program to take “city” name as input from user. If
+        // user enters “Karachi”, welcome the user like this:
+        // “Welcome to city of lights”
+        // Prompt the user to enter the city name
+            var cityName = prompt("Enter the city name:");
+
+        // Check if the entered city name is "Karachi"
+        if (cityName.toLowerCase() === "karachi") {
+        // Display the welcome message
+        document.write("<h3>Welcome to the city of lights!</h3>");
+        }
+
+        // Write a program to take “gender” as input from user. If the
+        // user is male, give the message: Good Morning Sir. If the
+        // user is female, give the message: Good Morning Ma’am.
+
+            // Prompt the user to enter their gender
+            var gender = prompt("Enter your gender:");
+
+            // Check the gender and display the appropriate morning greeting
+            if (gender.toLowerCase() === "male") {
+            // If the user is male
+            document.write("<h3>Good Morning Sir.</h3>");
+            } else if (gender.toLowerCase() === "female") {
+            // If the user is female
+            document.write("<h3>Good Morning Ma'am.</h3>");
+            } else {
+            // If the gender is not recognized
+            document.write("<h3>Good Morning!</h3>");
+            }
+
+        // Write a program to take input color of road traffic signal
+        // from the user & show the message according to this table:
+        // Signal color Message
+        // Red Must Stop
+        // Yellow Ready to move
+        // Green Move now
+        // Prompt the user to enter the color of the traffic signal
+
+            var signalColor = prompt("Enter the color of the traffic signal:");
+
+            // Convert the color to lowercase for case-insensitive comparison
+            signalColor = signalColor.toLowerCase();
+
+            // Display the corresponding message based on the color
+            if (signalColor === "red") {
+            document.write("<h3>Must Stop</h3>");
+            } else if (signalColor === "yellow") {
+            document.write("<h3>Ready to move</h3>");
+            } else if (signalColor === "green") {
+            document.write("<h3>Move now</h3>");
+            } else {
+            document.write("<h3>Invalid color</h3>");
+            }
+
+
+        // Write a program to take input remaining fuel in car (in
+        // litres) from user. If the current fuel is less than 0.25litres,
+        // show the message “Please refill the fuel in your car”
+        // Prompt the user to enter the remaining fuel in the car
+
+            var remainingFuel = parseFloat(prompt("Enter the remaining fuel in your car (in liters):"));
+
+            // Check if the remaining fuel is less than 0.25 liters
+            if (remainingFuel < 0.25) {
+            // Display the message to refill the fuel
+            document.write("<h3>Please refill the fuel in your car.</h3>");
+            } else {
+            // Display a generic message if the remaining fuel is sufficient
+            document.write("<h3>Fuel level is sufficient. Have a safe journey!</h3>");
+            }
+
+        // Write a program to take input the marks obtained in three
+        // subjects & total marks. Compute & show the resulting
+        // percentage on your page. Take percentage & compute
+        // grade as per following table:
+
+        // Prompt the user to enter the marks obtained in three subjects and the total marks
+            var subject1Marks = parseFloat(prompt("Enter marks obtained in subject 1:"));
+            var subject2Marks = parseFloat(prompt("Enter marks obtained in subject 2:"));
+            var subject3Marks = parseFloat(prompt("Enter marks obtained in subject 3:"));
+            var totalMarks = parseFloat(prompt("Enter total marks:"));
+
+            // Calculate the total marks obtained
+            var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
+
+            // Calculate the percentage
+            var percentage = (totalObtainedMarks / totalMarks) * 100;
+
+            // Determine the grade based on the percentage
+            var grade;
+            if (percentage >= 80) {
+            grade = "A+";
+            } else if (percentage >= 70) {
+            grade = "A";
+            } else if (percentage >= 60) {
+            grade = "B";
+            } else if (percentage >= 50) {
+            grade = "C";
+            } else if (percentage >= 40) {
+            grade = "D";
+            } else {
+            grade = "Fail";
+            }
+
+            // Display the resulting percentage and grade on the page
+            document.write("<h3>Percentage: " + percentage.toFixed(2) + "%</h3>");
+            document.write("<h3>Grade: " + grade + "</h3>");
+
+
+        // Guess game:
+        // Store a secret number (ranging from 1 to 10) in a variable.
+        // Prompt user to guess the secret number.
+        // a. If user guesses the same number, show “Bingo! Correct
+        // answer”.
+        // b. If the guessed number +1 is the secret number, show
+        // “Close enough to the correct answer”.
+
+        // Generate a random secret number between 1 and 10
+             var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+            // Prompt the user to guess the secret number
+            var userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+            // Check if the user's guess is correct or close enough
+            if (userGuess === secretNumber) {
+            document.write("<h3>Bingo! Correct answer.</h3>");
+            } else if (userGuess === secretNumber + 1) {
+            document.write("<h3>Close enough to the correct answer.</h3>");
+            } else {
+            document.write("<h3>Sorry, incorrect guess. The secret number was " + secretNumber + ".</h3>");
+            }
+
+        // 8Write a program to check whether the given number is
+        // divisible by 3. Show the message to the user if the number
+        // is divisible by 3.
+
+            // Prompt the user to enter a number
+            var number = parseInt(prompt("Enter a number:"));
+
+            // Check if the number is divisible by 3
+            if (number % 3 === 0) {
+            document.write("<h3>The number " + number + " is divisible by 3.</h3>");
+            } else {
+            document.write("<h3>The number " + number + " is not divisible by 3.</h3>");
+            }
+        
+        // Write a program that checks whether the given input is an
+        // even number or an odd number.
+    
+            // Prompt the user to enter a number
+            var number = parseInt(prompt("Enter a number:"));
+
+            // Check if the number is even or odd
+            if (number % 2 === 0) {
+            document.write("<h3>The number " + number + " is even.</h3>");
+            } else {
+            document.write("<h3>The number " + number + " is odd.</h3>");
+            }
+
+        // Write a program that takes temperature as input and
+        // shows a message based on following criteria
+        // a. T > 40 then “It is too hot outside.”
+        // b. T > 30 then “The Weather today is Normal.”
+        // c. T > 20 then “Today’s Weather is cool.”
+        // d. T > 10 then “OMG! Today’s weather is so Cool.”
+
+                // Prompt the user to enter the temperature
+            var temperature = parseFloat(prompt("Enter the temperature in degrees Celsius:"));
+
+            // Check the temperature and display the corresponding message
+            if (temperature > 40) {
+            document.write("<h3>It is too hot outside.</h3>");
+            } else if (temperature > 30) {
+            document.write("<h3>The weather today is normal.</h3>");
+            } else if (temperature > 20) {
+            document.write("<h3>Today's weather is cool.</h3>");
+            } else if (temperature > 10) {
+            document.write("<h3>OMG! Today's weather is so cool.</h3>");
+            } else {
+            document.write("<h3>It is extremely cold outside.</h3>");
+            }
+
+       
+        // Write a program to create a calculator for +,-,*, / & %
+        // using if statements. Take the following input:
+        // a. First number
+        // b. Second number
+        // c. Operation (+, -, *, /, %)
+        // Compute & show the calculated result to user.
+
+            // Prompt the user to enter the first number
+            var firstNumber = parseFloat(prompt("Enter the first number:"));
+
+            // Prompt the user to enter the second number
+            var secondNumber = parseFloat(prompt("Enter the second number:"));
+
+            // Prompt the user to enter the operation
+            var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+            // Variable to store the calculated result
+            var result;
+
+            // Check the operation and perform the corresponding calculation
+            if (operation === "+") {
+            result = firstNumber + secondNumber;
+            } else if (operation === "-") {
+            result = firstNumber - secondNumber;
+            } else if (operation === "*") {
+            result = firstNumber * secondNumber;
+            } else if (operation === "/") {
+            result = firstNumber / secondNumber;
+            } else if (operation === "%") {
+            result = firstNumber % secondNumber;
+            } else {
+            document.write("<h3>Invalid operation.</h3>");
+            // Exit the program if the operation is invalid
+            throw new Error("Invalid operation.");
+            }
+
+            // Display the calculated result to the user
+            document.write("<h3>The calculated result is: " + result + "</h3>");
+
+            //****************************CHAPTER 12 & 13 IF..ELSE & IF STATEMENT ,TESTING SET OF CONDITIONS******************************************************
+
+        // Write a program that takes a character (number or string)
+        // in a variable & checks whether the given input is a
+        // number, uppercase letter or lower case letter. (Hint: ASCII
+        // codes:- A=65, Z=90, a=97, z=122).
+
+            // Prompt the user to enter a character
+            var character = prompt("Enter a character:");
+
+            // Get the ASCII code of the character
+            var asciiCode = character.charCodeAt(0);
+
+            // Check if the character is a number
+            if (asciiCode >= 48 && asciiCode <= 57) {
+            document.write("<h3>The input is a number.</h3>");
+            }
+            // Check if the character is an uppercase letter
+            else if (asciiCode >= 65 && asciiCode <= 90) {
+            document.write("<h3>The input is an uppercase letter.</h3>");
+            }
+            // Check if the character is a lowercase letter
+            else if (asciiCode >= 97 && asciiCode <= 122) {
+            document.write("<h3>The input is a lowercase letter.</h3>");
+            }
+            // If none of the above conditions match, the input is not a number or a letter
+            else {
+            document.write("<h3>The input is not a number or a letter.</h3>");
+            }
+
+        // Write a JavaScript program that accept two integers and
+        // display the larger. Also show if the two integers are equal.
+
+            // Prompt the user to enter the first integer
+            var firstInteger = parseInt(prompt("Enter the first integer:"));
+
+            // Prompt the user to enter the second integer
+            var secondInteger = parseInt(prompt("Enter the second integer:"));
+
+            // Check if the first integer is greater than the second integer
+            if (firstInteger > secondInteger) {
+            document.write("<h3>The larger number is: " + firstInteger + "</h3>");
+            }
+            // Check if the second integer is greater than the first integer
+            else if (secondInteger > firstInteger) {
+            document.write("<h3>The larger number is: " + secondInteger + "</h3>");
+            }
+            // If none of the above conditions match, the two integers are equal
+            else {
+            document.write("<h3>The two integers are equal.</h3>");
+            }
+
+        // Write a program that takes input a number from user &
+        // state whether the number is positive, negative or zero.
+        
+            // Prompt the user to enter a number
+            var number = parseFloat(prompt("Enter a number:"));
+
+            // Check if the number is positive
+            if (number > 0) {
+            document.write("<h3>The number is positive.</h3>");
+            }
+            // Check if the number is negative
+            else if (number < 0) {
+            document.write("<h3>The number is negative.</h3>");
+            }
+            // If none of the above conditions match, the number is zero
+            else {
+            document.write("<h3>The number is zero.</h3>");
+            }
+
+        // Write a program that takes a character (i.e. string of
+        // length 1) and returns true if it is a vowel, false otherwise   
+
+            // Prompt the user to enter a character
+            var character = prompt("Enter a character:");
+
+            // Convert the character to lowercase for easier comparison
+            character = character.toLowerCase();
+
+            // Check if the character is a vowel
+            if (character === 'a' || character === 'e' || character === 'i' || character === 'o' || character === 'u') {
+            document.write("<h3>True, the character is a vowel.</h3>");
+            }
+            // If the character is not a vowel
+            else {
+            document.write("<h3>False, the character is not a vowel.</h3>");
+            }
+
+        // Write a program that
+        // a. Store correct password in a JS variable.
+        // b. Asks user to enter his/her password
+        // c. Validate the two passwords:
+        // i. Check if user has entered password. If not, then
+        // give message “ Please enter your password”
+        // ii. Check if both passwords are same. If they are
+        // same, show message “Correct! The password you
+        // entered matches the original password”. Show
+        // “Incorrect password” otherwise    
+
+
+            // Store the correct password
+            var correctPassword = "Password123";
+
+            // Prompt the user to enter their password
+            var enteredPassword = prompt("Enter your password:");
+
+            // Check if the entered password is empty
+            if (!enteredPassword) {
+            document.write("<h3>Please enter your password.</h3>");
+            }
+            // Check if the entered password matches the correct password
+            else if (enteredPassword === correctPassword) {
+            document.write("<h3>Correct! The password you entered matches the original password.</h3>");
+            }
+            // If the entered password is incorrect
+            else {
+            document.write("<h3>Incorrect password.</h3>");
+            }
+
+            // 6. This if/else statement does not work. Try to fix it:
+            // var greeting;
+            // var hour = 13;
+            // if (hour < 18) {
+            // greeting = "Good day";
+            // else
+            // greeting = "Good evening";
+            // }
+
+            var greeting;
+            var hour = 13;
+            if (hour < 18) {
+            greeting = "Good day";
+            } else {
+            greeting = "Good evening";
+            }
+
+            // Write a program that takes time as input from user in 24
+            // hours clock format like: 1900 = 7pm. Implement the
+            // following case using if, else & else if statements
+
+                // Prompt the user to enter the time in 24-hour clock format
+                var time = prompt("Enter the time in 24-hour clock format (e.g., 1900 for 7pm):");
+
+                // Extract the hour from the time
+                var hour = parseInt(time.substring(0, 2));
+
+                // Determine the appropriate case based on the hour
+                if (hour >= 0 && hour < 12) {
+                document.write("<h3>Good morning!</h3>");
+                } else if (hour >= 12 && hour < 18) {
+                document.write("<h3>Good afternoon!</h3>");
+                } else if (hour >= 18 && hour < 24) {
+                document.write("<h3>Good evening!</h3>");
+                } else {
+                document.write("<h3>Invalid time entered.</h3>");
+                }
+
+    </script>
+  </body>
+</html>
